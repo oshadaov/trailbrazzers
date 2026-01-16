@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 
 import HomePage from "../pages/HomePage";
 import ToursPage from "../pages/ToursPage";
+import TourDetailsPage from "../pages/TourDetailsPage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
 import NotFoundPage from "../pages/NotFoundPage";
@@ -19,6 +20,7 @@ export default function Layout() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/tours" element={<ToursPage />} />
+          <Route path="/tours/:category/:tourId" element={<TourDetailsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />

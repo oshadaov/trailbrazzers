@@ -1,7 +1,9 @@
 import React, { useMemo, useState } from "react";
 import { Users, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { colors } from "../theme/colors";
 import { tourData } from "../data/tours";
+import { Icon } from "../utils/iconMap";
 
 export default function TourCollections() {
   const [activeTab, setActiveTab] = useState("waterfall");
@@ -29,7 +31,7 @@ export default function TourCollections() {
               }}
               className="flex items-center gap-2 px-6 py-3 border rounded-full transition-all duration-300 hover:bg-opacity-10 hover:bg-white"
             >
-              {data.icon}
+              <Icon name={data.iconName} className="w-6 h-6" />
               <span className="uppercase tracking-wider text-sm font-bold">{data.title.split(" ")[0]}</span>
             </button>
           ))}
@@ -44,9 +46,9 @@ export default function TourCollections() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {tourData[activeTab].packages.map((pkg, index) => (
+            {tourData[activeTab].packages.map((pkg) => (
               <article
-                key={index}
+                key={pkg.id}
                 style={{ backgroundColor: colors.cloudCream }}
                 className="rounded-none shadow-2xl overflow-hidden group hover:-translate-y-1 transition-transform duration-300 flex flex-col"
               >
@@ -94,13 +96,14 @@ export default function TourCollections() {
                     <span style={{ color: colors.deepGreen }} className="font-bold text-sm">
                       RESERVE NOW
                     </span>
-                    <button
+                    <Link
+                      to={`/tours/${activeTab}/${pkg.id}`}
                       style={{ backgroundColor: colors.deepGreen }}
                       className="p-2 rounded-full text-white hover:bg-opacity-90 transition-colors"
-                      aria-label="Reserve"
+                      aria-label={`View ${pkg.name}`}
                     >
                       <ChevronRight size={20} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>

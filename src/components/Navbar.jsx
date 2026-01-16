@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Mountain, Menu, X } from "lucide-react";
+import { Mountain, Menu, X, MessageCircle } from "lucide-react";
 import { colors } from "../theme/colors";
 import { routes } from "../routes/routes";
 
@@ -8,6 +8,11 @@ const base = "px-3 py-2 rounded-md text-sm font-medium transition-colors upperca
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "";
+
+  const whatsappHref = whatsappNumber
+    ? `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}`
+    : null;
 
   return (
     <nav style={{ backgroundColor: colors.deepGreen }} className="sticky top-0 z-50 shadow-xl">
@@ -28,7 +33,7 @@ export default function Navbar() {
           </NavLink>
 
           {/* Desktop */}
-          <div className="hidden md:flex items-baseline space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {routes.map((r) => (
               <NavLink
                 key={r.path}
@@ -40,6 +45,18 @@ export default function Navbar() {
                 {r.label}
               </NavLink>
             ))}
+
+            {whatsappHref ? (
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                style={{ backgroundColor: colors.gold, color: colors.deepGreen }}
+                className="inline-flex items-center gap-2 px-4 py-2 font-bold uppercase tracking-wider text-sm hover:opacity-90"
+              >
+                <MessageCircle size={18} /> WhatsApp
+              </a>
+            ) : null}
           </div>
 
           {/* Mobile toggle */}
@@ -73,6 +90,18 @@ export default function Navbar() {
                 {r.label}
               </NavLink>
             ))}
+
+            {whatsappHref ? (
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                style={{ backgroundColor: colors.gold, color: colors.deepGreen }}
+                className="mt-2 inline-flex w-full items-center justify-center gap-2 px-4 py-3 font-bold uppercase tracking-wider text-sm"
+              >
+                <MessageCircle size={18} /> Chat on WhatsApp
+              </a>
+            ) : null}
           </div>
         </div>
       )}
