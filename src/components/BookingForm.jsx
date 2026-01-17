@@ -52,12 +52,12 @@ export default function BookingForm({ tour, businessName = "Tour Operator" }) {
   const onChange = (key) => (e) => setForm((p) => ({ ...p, [key]: e.target.value }));
 
   return (
-    <section style={{ backgroundColor: colors.cloudCream }} className="rounded-none shadow-xl p-6 md:p-8">
-      <h3 style={{ color: colors.deepGreen }} className="text-2xl font-serif font-bold mb-2">
-        Book / Ask a Question
+    <section style={{ backgroundColor: colors.premiumCream }} className="rounded-none shadow-xl p-6 md:p-8">
+      <h3 style={{ color: colors.forestGreen }} className="text-2xl font-serif font-bold mb-2">
+        Reserve your experience
       </h3>
       <p className="text-gray-600 mb-6">
-        Fill this in once and send it instantly to WhatsApp (fastest) or email.
+        Share your details once and send it instantly to WhatsApp (fastest) or email.
       </p>
 
       <div className="grid md:grid-cols-2 gap-4">
@@ -167,7 +167,7 @@ export default function BookingForm({ tour, businessName = "Tour Operator" }) {
           href={whatsappNumber ? whatsappUrl : undefined}
           target="_blank"
           rel="noreferrer"
-          style={{ backgroundColor: colors.deepGreen }}
+          style={{ backgroundColor: colors.forestGreen }}
           className={`px-5 py-3 text-white font-bold uppercase tracking-wider text-sm text-center ${
             whatsappNumber ? "hover:bg-opacity-90" : "opacity-50 cursor-not-allowed"
           }`}

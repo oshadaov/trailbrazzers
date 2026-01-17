@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* Brand typography */
+:root {
+  --font-body: "Roboto", ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  --font-heading: "Cormorant Garamond", ui-serif, Georgia, "Times New Roman", Times, serif;
+}
+
+html, body {
+  font-family: var(--font-body);
+  background: #F8F6F1;
+}
+
+/* Convenience class for headings */
+.font-serif {
+  font-family: var(--font-heading);
+}
+
 
 
 

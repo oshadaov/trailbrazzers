@@ -4,7 +4,7 @@ import SeoHead from "../components/SeoHead";
 import { colors } from "../theme/colors";
 
 export default function ContactPage() {
-  const businessName = import.meta.env.VITE_BUSINESS_NAME || "Tour Operator";
+  const businessName = import.meta.env.VITE_BUSINESS_NAME || "Trailblazers";
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "";
   const contactEmail = import.meta.env.VITE_CONTACT_EMAIL || "";
   const contactPhone = import.meta.env.VITE_CONTACT_PHONE || "";
@@ -20,7 +20,7 @@ export default function ContactPage() {
     <div className="max-w-5xl mx-auto px-4 py-16">
       <SeoHead title={title} description={description} url={url} image={ogImage || undefined} />
 
-      <h1 style={{ color: colors.deepGreen }} className="text-3xl md:text-4xl font-serif font-bold mb-4">
+      <h1 style={{ color: colors.forestGreen }} className="text-3xl md:text-4xl font-serif font-bold mb-4">
         Contact
       </h1>
       <p className="text-gray-700 mb-8">
@@ -29,7 +29,7 @@ export default function ContactPage() {
 
       <div className="grid md:grid-cols-2 gap-6">
         <div className="border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold mb-4" style={{ color: colors.deepGreen }}>
+          <h2 className="text-xl font-bold mb-4" style={{ color: colors.forestGreen }}>
             Quick contacts
           </h2>
 
@@ -62,7 +62,7 @@ export default function ContactPage() {
           </div>
 
           <div className="mt-6 border-t pt-6">
-            <h3 className="font-bold" style={{ color: colors.deepGreen }}>
+            <h3 className="font-bold" style={{ color: colors.forestGreen }}>
               What to include in your message
             </h3>
             <ul className="mt-3 list-disc pl-5 text-gray-700 space-y-1">
@@ -75,7 +75,7 @@ export default function ContactPage() {
         </div>
 
         <div className="border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold mb-4" style={{ color: colors.deepGreen }}>
+          <h2 className="text-xl font-bold mb-4" style={{ color: colors.forestGreen }}>
             Location
           </h2>
           <p className="text-gray-700 flex items-center gap-2">

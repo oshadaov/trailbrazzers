@@ -9,7 +9,7 @@ import { findTour } from "../data/tours";
 function Pill({ children }) {
   return (
     <span
-      style={{ borderColor: colors.gold, color: colors.cloudCream }}
+      style={{ borderColor: colors.premiumGold, color: colors.premiumCream }}
       className="inline-flex items-center gap-2 border px-3 py-1 text-xs uppercase tracking-wider"
     >
       {children}
@@ -45,14 +45,14 @@ export default function TourDetailsPage() {
     <>
       <SeoHead title={title} description={description} url={url} image={ogImage || undefined} />
 
-      <section style={{ backgroundColor: colors.deepGreen }} className="text-white">
+      <section style={{ backgroundColor: colors.forestGreen }} className="text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div>
               <Link to="/tours" className="text-sm underline text-gray-200">
                 ← Back to Tours
               </Link>
-              <h1 className="mt-3 text-3xl md:text-4xl font-serif font-bold" style={{ color: colors.gold }}>
+              <h1 className="mt-3 text-3xl md:text-4xl font-serif font-bold" style={{ color: colors.premiumGold }}>
                 {tour.name}
               </h1>
               <p className="mt-2 text-gray-200">{tour.categoryTitle}</p>
@@ -81,7 +81,7 @@ export default function TourDetailsPage() {
                 <ul className="grid sm:grid-cols-2 gap-2">
                   {tour.highlights.map((h) => (
                     <li key={h} className="text-gray-100 flex items-start gap-2">
-                      <span style={{ color: colors.gold }}>•</span>
+                      <span style={{ color: colors.premiumGold }}>•</span>
                       {h}
                     </li>
                   ))}
@@ -106,15 +106,15 @@ export default function TourDetailsPage() {
                   <h2 className="text-xl font-bold mb-3">Good to know</h2>
                   <ul className="space-y-2 text-gray-100">
                     <li className="flex gap-2">
-                      <BadgeCheck size={18} style={{ color: colors.gold }} />
+                      <BadgeCheck size={18} style={{ color: colors.premiumGold }} />
                       Private tour options available (ask for custom pickup/time).
                     </li>
                     <li className="flex gap-2">
-                      <Shield size={18} style={{ color: colors.gold }} />
+                      <Shield size={18} style={{ color: colors.premiumGold }} />
                       Safety-first: guided route planning and weather-aware decisions.
                     </li>
                     <li className="flex gap-2">
-                      <MapPinned size={18} style={{ color: colors.gold }} />
+                      <MapPinned size={18} style={{ color: colors.premiumGold }} />
                       Pickup area and extra distance fees depend on your location.
                     </li>
                   </ul>
@@ -126,7 +126,7 @@ export default function TourDetailsPage() {
               <BookingForm tour={tour} businessName={businessName} />
 
               <div className="mt-6 p-6 border" style={{ borderColor: "rgba(255,255,255,0.18)" }}>
-                <h3 className="text-lg font-bold" style={{ color: colors.gold }}>
+                <h3 className="text-lg font-bold" style={{ color: colors.premiumGold }}>
                   Quick FAQ
                 </h3>
                 <div className="mt-4 space-y-3 text-gray-100">

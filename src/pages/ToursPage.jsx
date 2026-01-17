@@ -7,7 +7,7 @@ import { getAllToursFlat, tourData } from "../data/tours";
 import { Icon } from "../utils/iconMap";
 
 export default function ToursPage() {
-  const businessName = import.meta.env.VITE_BUSINESS_NAME || "Tour Operator";
+  const businessName = import.meta.env.VITE_BUSINESS_NAME || "Trailblazers";
   const siteUrl = import.meta.env.VITE_SITE_URL || "";
   const ogImage = import.meta.env.VITE_OG_IMAGE || "";
 
@@ -32,7 +32,7 @@ export default function ToursPage() {
   }, [all, filters]);
 
   const title = `Tours | ${businessName}`;
-  const description = "Explore curated jeep tours: waterfalls, peaks, trekking, wildlife, and cultural routes. Book quickly via WhatsApp or email.";
+  const description = "Explore Water, Earth, Light, and Spirit experiences in Belihuloya. Regenerative journeys designed with low-impact logistics and community partners.";
   const url = siteUrl ? `${siteUrl.replace(/\/$/, "")}/tours` : undefined;
 
   return (
@@ -40,12 +40,12 @@ export default function ToursPage() {
       <SeoHead title={title} description={description} url={url} image={ogImage || undefined} />
 
       {/* Quick explorer (filterable list) */}
-      <section style={{ backgroundColor: colors.cloudCream }} className="py-14">
+      <section style={{ backgroundColor: colors.premiumCream }} className="py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between flex-wrap gap-4">
             <div>
-              <h1 style={{ color: colors.deepGreen }} className="text-3xl md:text-4xl font-serif font-bold">
-                Explore Tours
+              <h1 style={{ color: colors.forestGreen }} className="text-3xl md:text-4xl font-serif font-bold">
+                Explore the Experience
               </h1>
               <p className="text-gray-600 mt-2">Filter by category, difficulty, or search by places and highlights.</p>
             </div>
@@ -86,7 +86,7 @@ export default function ToursPage() {
                 <input
                   value={filters.q}
                   onChange={(e) => setFilters((p) => ({ ...p, q: e.target.value }))}
-                  placeholder="Try: Bambarakanda, Devil’s Staircase, Lipton’s Seat"
+                  placeholder="Try: Bambarakanda, Samanala Wewa, stargazing"
                   className="mt-2 border border-gray-300 px-3 py-2 w-72 max-w-full"
                 />
               </label>
@@ -104,7 +104,7 @@ export default function ToursPage() {
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <p className="text-xs uppercase tracking-wider text-gray-500 font-bold">{t.categoryTitle}</p>
-                      <h3 style={{ color: colors.deepGreen }} className="mt-1 text-lg font-bold">
+                      <h3 style={{ color: colors.forestGreen }} className="mt-1 text-lg font-bold">
                         {t.name}
                       </h3>
                     </div>

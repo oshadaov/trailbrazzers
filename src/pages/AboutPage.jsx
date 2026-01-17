@@ -1,56 +1,92 @@
 import React from "react";
-import { BadgeCheck, Shield, Leaf, Users } from "lucide-react";
+import { BadgeCheck, Leaf, Shield, Users } from "lucide-react";
 import SeoHead from "../components/SeoHead";
 import { colors } from "../theme/colors";
 
 export default function AboutPage() {
-  const businessName = import.meta.env.VITE_BUSINESS_NAME || "Tour Operator";
-  const baseUrl = import.meta.env.VITE_SITE_URL || "";
+  const businessName = import.meta.env.VITE_BUSINESS_NAME || "Trailblazers";
+  const siteUrl = import.meta.env.VITE_SITE_URL || "";
   const ogImage = import.meta.env.VITE_OG_IMAGE || "";
-  const title = `About | ${businessName}`;
-  const description = `Learn about ${businessName}: locally guided jeep tours, safety-first planning, and eco-friendly travel.`;
-  const url = baseUrl ? `${baseUrl.replace(/\/$/, "")}/about` : undefined;
+
+  const title = `Our Story | ${businessName}`;
+  const description = "Trailblazers is a regenerative eco-tourism brand rooted in Belihuloya—created to reconnect people with nature through conscious exploration, science, and community partnership.";
+  const url = siteUrl ? `${siteUrl.replace(/\/$/, "")}/about` : undefined;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-16">
+    <>
       <SeoHead title={title} description={description} url={url} image={ogImage || undefined} />
 
-      <h1 style={{ color: colors.deepGreen }} className="text-3xl md:text-4xl font-serif font-bold mb-4">
-        About {businessName}
-      </h1>
-      <p className="text-gray-700 leading-relaxed">
-        We build memorable experiences in the hill country — waterfalls, viewpoints, forest trails and wildlife routes —
-        with local guides and jeep drivers who know the terrain. Our focus is simple: comfort, safety, and real Sri Lankan
-        nature.
-      </p>
-
-      <div className="mt-10 grid sm:grid-cols-2 gap-6">
-        <div className="border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold" style={{ color: colors.deepGreen }}>
-            What makes us different
-          </h2>
-          <ul className="mt-4 space-y-3 text-gray-700">
-            <li className="flex gap-3"><BadgeCheck style={{ color: colors.gold }} /> Curated routes (not copy-paste itineraries)</li>
-            <li className="flex gap-3"><Shield style={{ color: colors.gold }} /> Safety-first, weather-aware planning</li>
-            <li className="flex gap-3"><Leaf style={{ color: colors.gold }} /> Eco-friendly stops and respectful travel</li>
-            <li className="flex gap-3"><Users style={{ color: colors.gold }} /> Local guide support for a richer experience</li>
-          </ul>
-        </div>
-
-        <div className="border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold" style={{ color: colors.deepGreen }}>
-            Want a custom itinerary?
-          </h2>
-          <p className="mt-4 text-gray-700">
-            Tell us your dates, group size, and what you want to see (waterfalls, trekking, wildlife, culture). We’ll build
-            a day plan and give you a clear price.
+      <section style={{ backgroundColor: colors.premiumCream }} className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 style={{ color: colors.forestGreen }} className="text-3xl md:text-4xl font-serif font-bold mb-4">
+            Our Story
+          </h1>
+          <p className="text-gray-700 max-w-3xl">
+            Trailblazers was born from a simple truth: when humans are separated from nature, we lose something essential.
+            We designed a travel brand that restores that bond—where every step, every story, and every star-filled sky
+            becomes a catalyst for inner transformation.
           </p>
-          <p className="mt-4 text-sm text-gray-600">
-            Tip: Add your certificates/guide licenses, TripAdvisor/Google review links, and real client photos here to
-            increase trust.
-          </p>
+
+          <div className="mt-10 grid lg:grid-cols-3 gap-6">
+            <div className="p-6 bg-white border border-gray-200">
+              <h2 style={{ color: colors.forestGreen }} className="text-xl font-bold mb-3">
+                Vision
+              </h2>
+              <p className="text-gray-600">
+                To establish Belihuloya as a globally recognized regenerative eco-tourism destination, where visitors leave
+                with a deeper reverence for life and the local landscape grows healthier with every journey.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white border border-gray-200">
+              <h2 style={{ color: colors.forestGreen }} className="text-xl font-bold mb-3">
+                Mission
+              </h2>
+              <p className="text-gray-600">
+                To deliver luxury, low-impact experiences that protect watersheds, restore forests, support local community
+                partners, and cultivate conscious exploration.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white border border-gray-200">
+              <h2 style={{ color: colors.forestGreen }} className="text-xl font-bold mb-3">
+                Promise
+              </h2>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex gap-3"><BadgeCheck style={{ color: colors.premiumGold }} /> Regenerative by design (not an afterthought)</li>
+                <li className="flex gap-3"><Shield style={{ color: colors.premiumGold }} /> Safety-first, weather-aware planning</li>
+                <li className="flex gap-3"><Leaf style={{ color: colors.premiumGold }} /> Blue-Green conservation focus</li>
+                <li className="flex gap-3"><Users style={{ color: colors.premiumGold }} /> Transparent community partnership model</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 grid lg:grid-cols-2 gap-6">
+            <div className="p-8 border border-gray-200 bg-white">
+              <h3 style={{ color: colors.forestGreen }} className="text-2xl font-serif font-bold">The Brand Heart</h3>
+              <p className="mt-3 text-gray-600 leading-relaxed">
+                We believe the observer and the observed are one. Trailblazers invites you to step into nature not as a
+                consumer, but as a participant. When you listen, walk, and breathe with intention, the landscape becomes a
+                teacher—and you become part of its healing.
+              </p>
+              <p className="mt-3 text-gray-600 leading-relaxed">
+                Our home is Belihuloya, Sri Lanka—a biodiversity super-hotspot where multiple climate zones meet beneath the
+                spiritual shadow of Sri Pada. We protect what makes this place sacred: water, forest, sky, and community.
+              </p>
+            </div>
+
+            <div className="p-8 border border-gray-200 bg-white">
+              <h3 style={{ color: colors.forestGreen }} className="text-2xl font-serif font-bold">How We Operate</h3>
+              <ul className="mt-4 space-y-3 text-gray-700">
+                <li><span className="font-semibold">Pre-profit revenue share:</span> community partners benefit before profits are taken.</li>
+                <li><span className="font-semibold">Dark-sky ethics:</span> we use low-impact lighting and noise-aware night practices.</li>
+                <li><span className="font-semibold">Local-first guiding:</span> routes and stories are led by people rooted in the land.</li>
+                <li><span className="font-semibold">Impact reporting:</span> live counters and transparent updates on the Impact Dashboard.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

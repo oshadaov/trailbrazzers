@@ -9,6 +9,8 @@ import ToursPage from "../pages/ToursPage";
 import TourDetailsPage from "../pages/TourDetailsPage";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
+import ImpactPage from "../pages/ImpactPage";
+import SciencePage from "../pages/SciencePage";
 import NotFoundPage from "../pages/NotFoundPage";
 
 export default function Layout() {
@@ -21,6 +23,8 @@ export default function Layout() {
           <Route path="/" element={<HomePage />} />
           <Route path="/tours" element={<ToursPage />} />
           <Route path="/tours/:category/:tourId" element={<TourDetailsPage />} />
+          <Route path="/impact" element={<ImpactPage />} />
+          <Route path="/science" element={<SciencePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
