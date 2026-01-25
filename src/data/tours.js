@@ -264,7 +264,7 @@ export const tourData = {
         duration: "Full Day",
         people: "Up to 8",
         highlights: ["Custom Animal Checklist", "Conservation Talk", "Transit Home"],
-        includes: ["Educational Worksheets", "Gifts for Kids", "Sustainable Farm Lunch1"],
+        includes: ["Educational Worksheets", "Gifts for Kids", "Sustainable Farm Lunch"],
         priceFrom: "Contact for rates",
       },
     ],
