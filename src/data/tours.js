@@ -1,105 +1,108 @@
-// Plain data only (no React / JSX) so it can later be moved to an API or CMS easily.
+// Plain data only (no React / JSX)
 // iconName must match a key in src/utils/iconMap.jsx
 
 export const tourData = {
   waterfall: {
     key: "waterfall",
     title: "Waterfall Wonders Safari",
-    subtitle: "Chase the falls, feel the mist, and explore nature’s rhythm.",
+    subtitle: "Chase the cascading beauty of Sri Lanka’s most scenic waterfalls.",
     iconName: "Droplets",
     accent: "skyBlue",
+
+    keyStops: [
+      "Bambarakanda",
+      "Pahanthudawa Falls",
+      "Surathali Falls",
+      "Upper Bambarakanda",
+      "Duwili Ella",
+      "Nonpareil",
+      "Walawal Thuna",
+    ],
+
+    idealFor: ["Photographers", "Romantic Getaways", "Nature Lovers"],
+    durationOptions: ["Full Day", "Half Day"],
+    addons: ["River bath"],
+    includes: ["Safari jeep", "River lunch (BBQ)", "Local snacks and fruits basket"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)", "Half Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 70, halfDay: 50 },
+        { pax: 3, fullDay: 60, halfDay: 40 },
+        { pax: 4, fullDay: 50, halfDay: 30 },
+      ],
+      currency: "USD",
+    },
+
     packages: [
       {
-        id: "classic-waterfall-safari",
-        name: "Classic Waterfall Safari",
-        duration: "Half-Day (5 hrs)",
-        people: "Up to 8",
-        highlights: ["Bakers Bend", "Non Pareil Waterfall", "Hirikatuoya River Falls"],
-        includes: ["4x4 Jeep", "Local Guide", "River stop", "Free mobile photos"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "misty-falls-explorer",
-        name: "Misty Falls Explorer",
-        duration: "Full Day (10 hrs)",
-        people: "Up to 8",
+        id: "waterfall-full-or-half",
+        name: "Waterfall Wonders Safari",
+        duration: "Full Day / Half Day Options",
+        people: "2–8 (custom on request)",
         highlights: [
+          "Bambarakanda",
+          "Pahanthudawa Falls",
           "Surathali Falls",
-          "Bambarakanda (Tallest)",
-          "Upper Bambarakanda Trek",
-          "Samanala Wewa",
+          "Upper Bambarakanda",
+          "Duwili Ella",
+          "Nonpareil",
+          "Walawal Thuna",
         ],
-        includes: ["Off-road Jeep", "Nature Guide", "Entry tickets", "Lunch at local home"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "ultimate-7-falls-circuit",
-        name: "Ultimate 7-Falls Circuit",
-        duration: "Full Day Extended",
-        people: "Up to 8",
-        highlights: ["Kuragala", "Hunugal Pokuna", "Duwili Ella", "Samanala Wewa", "7 Falls Total"],
-        includes: ["Modified 4x4 Jeep", "Two Guides", "Picnic Lunch", "Printed Group Photo"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "waterfalls-wellness",
-        name: "Waterfalls + Wellness",
-        duration: "10 hrs",
-        people: "Up to 6",
-        highlights: [
-          "Horton Plains",
-          "Devil's Staircase",
-          "Herbal Bath in Stream",
-          "Forest Meditation",
-        ],
-        includes: ["Jeep + Light Trek", "Wellness Guide", "Herbal Foot Soak Kit", "Organic Lunch"],
-        priceFrom: "Contact for rates",
+        includes: ["Safari jeep", "River lunch (BBQ)", "Local snacks & fruits basket"],
+        addOns: ["River bath"],
+        priceFrom: "Per-person rates available (USD)",
       },
     ],
   },
 
   peaks: {
     key: "peaks",
-    title: "Scenic Peaks & Viewpoints",
-    subtitle: "Above the clouds, beyond the noise — see Sri Lanka’s soul.",
+    title: "Scenic Peaks & Viewpoints Tour",
+    subtitle: "Breathe in panoramic views and cool mountain air across Uva’s hilltops.",
     iconName: "Mountain",
     accent: "forestGreen",
+
+    keyStops: [
+      "Baker’s Bend",
+      "Haputale Main View",
+      "Wangedigala",
+      "Lipton’s Seat",
+      "Weliwanguwa",
+      "Nagrak Viewpoint",
+    ],
+
+    idealFor: ["Calm Explorers", "Families", "Landscape Seekers"],
+    durationOptions: ["Full Day", "Half Day"],
+    addons: ["Sunrise Ride", "Drone Photography", "Tea Factory Visit", "Snacks at Viewpoint"],
+    includes: ["Safari jeep / transport (as arranged)", "Guide support"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)", "Half Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 70, halfDay: 50 },
+        { pax: 3, fullDay: 60, halfDay: 40 },
+        { pax: 4, fullDay: 50, halfDay: 30 },
+      ],
+      currency: "USD",
+    },
+
     packages: [
       {
-        id: "bakers-bend-sunrise",
-        name: "Bakers Bend Sunrise",
-        duration: "Half-Day (4 hrs)",
-        people: "Up to 6",
-        highlights: ["Golden Hour at Bakers Bend", "Cliffside Curve", "Light Breakfast at Viewpoint"],
-        includes: ["Sunrise Jeep Ride", "Hot Tea + Snacks", "Warm Seating Mats"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "peaks-of-uva-explorer",
-        name: "Peaks of Uva Explorer",
-        duration: "Full Day",
-        people: "Up to 8",
-        highlights: ["Lipton’s Seat", "Haputale Main View", "Adisham Bungalow"],
-        includes: ["Full-day Jeep", "Entry Permits", "Packed Lunch", "Nature Trail"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "wangedigala-hike-combo",
-        name: "Wangedigala Hike Combo",
-        duration: "7:00 AM – 3:30 PM",
-        people: "Up to 6",
-        highlights: ["4x4 Ride to Trailhead", "Guided Hike to Peak", "Misty Forest Ridge"],
-        includes: ["Hiking Guide", "Jeep", "Trekking Poles", "Hydration Pack"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "sunset-serenity-peak",
-        name: "Sunset + Serenity Peak",
-        duration: "Evening (4 hrs)",
-        people: "Up to 6",
-        highlights: ["Weliwanguwa Ridge Sunset", "Forest Guide Session", "Storytelling"],
-        includes: ["Evening Jeep Ride", "Blankets + Lanterns", "Organic Juice"],
-        priceFrom: "Contact for rates",
+        id: "peaks-full-or-half",
+        name: "Scenic Peaks & Viewpoints",
+        duration: "Full Day / Half Day Options",
+        people: "2–8",
+        highlights: [
+          "Baker’s Bend sunrise option",
+          "Lipton’s Seat",
+          "Haputale Main View",
+          "Weliwanguwa ridge",
+          "Wangedigala area viewpoints",
+        ],
+        includes: ["Transport", "Guide support"],
+        addOns: ["Sunrise Ride", "Drone Photography", "Tea Factory Visit", "Snacks at Viewpoint"],
+        priceFrom: "Per-person rates available (USD)",
       },
     ],
   },
@@ -107,175 +110,269 @@ export const tourData = {
   trek: {
     key: "trek",
     title: "Trek & Trail Adventure",
-    subtitle: "Off-road wheels meet mountain feet for wild-hearted wanderers.",
+    subtitle: "For the hikers, climbers, and thrill-lovers. Off-road meets on-foot!",
     iconName: "Footprints",
     accent: "premiumGold",
+
+    keyStops: ["Devils’s Staircase", "Belihuloya to Nonpareil Trail", "Wangedigala Trek", "Kuragala Pilgrim Path"],
+
+    idealFor: ["Fitness Groups", "Trekking Clubs", "Adventure Tourists"],
+    durationOptions: ["Full Day", "Multi-day"],
+    addons: ["Hydration Packs", "Guided Hike", "Camping"],
+    includes: ["Guide support (as arranged)", "Safety-first planning"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 100 },
+        { pax: 3, fullDay: 90 },
+        { pax: 4, fullDay: 80 },
+      ],
+      currency: "USD",
+    },
+
     packages: [
       {
-        id: "devils-staircase-epic",
-        name: "Devil’s Staircase Epic",
-        duration: "Full Day",
-        people: "Up to 6",
-        highlights: ["Extreme Jeep Ride", "Haputale to Weliwanguwa", "Cliff Hikes"],
-        includes: ["Off-road Driver", "Safety Gear", "Professional Photos", "Packed Lunch"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "wangedigala-sunrise-trek",
-        name: "Wangedigala Sunrise Trek",
-        duration: "4:30 AM – 11:00 AM",
-        people: "Up to 6",
-        highlights: ["Pre-dawn Start", "Sunrise at Peak", "Viewing Ledges"],
-        includes: ["Headlamps", "Walking Sticks", "Breakfast Pack", "Trekking Guide"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "duwili-ella-jungle-trek",
-        name: "Duwili Ella Jungle Trek",
-        duration: "7:00 AM – 2:00 PM",
-        people: "Up to 8",
-        highlights: ["Jeep to Jungle Edge", "Guided Trail to Fall", "Misty Plunge Pool"],
-        includes: ["Nature Trail Guide", "Local Fruit + Snacks", "Towels"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "belihuloya-forest-sampler",
-        name: "Belihuloya Forest Sampler",
-        duration: "3-4 Hours",
-        people: "Up to 6",
-        highlights: ["Hirikatuoya River Trail", "Mini Jungle Loop", "Birdwatching"],
-        includes: ["Short Jeep Transfer", "Activity Pack (Sketching)", "Refreshments"],
-        priceFrom: "Contact for rates",
+        id: "trek-full-or-multi",
+        name: "Trek & Trail Adventure",
+        duration: "Full Day / Multi-day",
+        people: "2–8 (depends on trail)",
+        highlights: ["Devil’s Staircase", "Wangedigala Trek", "Belihuloya–Nonpareil trail", "Kuragala pilgrim path"],
+        includes: ["Guided hike option", "Route planning", "Safety guidance"],
+        addOns: ["Hydration Packs", "Camping"],
+        priceFrom: "Per-person rates available (USD)",
       },
     ],
   },
 
   history: {
     key: "history",
-    title: "Sacred Rock & History",
-    subtitle: "Where ancient stories echo through misty hills and sacred stones.",
+    title: "Sacred Rock & History Trail",
+    subtitle: "Uncover spiritual sites and ancient stories of the hill country.",
     iconName: "Map",
     accent: "charcoalGray",
+
+    keyStops: ["Adisham Bungalow", "Prehistoric Cave Sites", "Kuragala Monastery", "Hunugal Pokuna"],
+
+    idealFor: ["Educational Groups", "Cultural Enthusiasts", "Pilgrim Tourists"],
+    durationOptions: ["Half Day", "Full Day"],
+    addons: ["Herbal Tea Stop", "Local Monk Session", "Folklore Storytelling"],
+    includes: ["Cultural guidance (as arranged)"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)", "Half Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 70, halfDay: 50 },
+        { pax: 3, fullDay: 60, halfDay: 40 },
+        { pax: 4, fullDay: 50, halfDay: 30 },
+      ],
+      currency: "USD",
+    },
+
     packages: [
       {
-        id: "kuragala-monastery-tour",
-        name: "Kuragala Monastery Tour",
-        duration: "Half-Day",
-        people: "Up to 8",
-        highlights: ["Buddhist Caves", "Islamic Sites", "Sacred Blend of Faiths"],
-        includes: ["Spiritual Heritage Guide", "Herbal Tea", "Info Leaflet"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "adisham-colonial-trail",
-        name: "Adisham & Colonial Trail",
-        duration: "Full Day",
-        people: "Up to 6",
-        highlights: ["British-Era Estate", "Tea Factory Tour", "Planter's Home Lunch"],
-        includes: ["History Guide", "Tea Tasting", "Gift: Tea Pack"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "ancient-springs-trail",
-        name: "Ancient Springs Trail",
-        duration: "Half-Day",
-        people: "Up to 6",
-        highlights: ["Hunugal Pokuna", "Village Folklore", "Stone Stupa Ruins"],
-        includes: ["Village Guide", "Illustrated Story Card", "Bamboo Seating"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "prehistoric-cave-trail",
-        name: "Prehistoric Cave Trail",
-        duration: "Full Day",
-        people: "Up to 6",
-        highlights: ["Fa Hien / Batadombalena Caves", "Balangoda Culture", "Forest Lunch"],
-        includes: ["Cultural Interpreter", "Entry Tickets", "Fossil Activity for Kids"],
-        priceFrom: "Contact for rates",
+        id: "history-half-or-full",
+        name: "Sacred Rock & History Trail",
+        duration: "Half Day / Full Day",
+        people: "2–8",
+        highlights: ["Kuragala Monastery", "Hunugal Pokuna", "Adisham Bungalow", "Prehistoric cave sites"],
+        includes: ["Guide support", "Respectful cultural guidance"],
+        addOns: ["Herbal Tea Stop", "Local Monk Session", "Folklore Storytelling"],
+        priceFrom: "Per-person rates available (USD)",
       },
     ],
   },
 
   twilight: {
     key: "twilight",
-    title: "Twilight & Night Safari",
-    subtitle: "As the sun sets, the wild awakens.",
+    title: "Twilight Safari + Campfire Night",
+    subtitle: "Night drive, stars above, and a campfire meal beneath the trees.",
     iconName: "Moon",
     accent: "skyBlue",
+
+    keyStops: ["Devil’s River (optional)", "Pambahinna Forest Patch", "Local Wildlife Trail"],
+    idealFor: ["Couples", "Friends Groups", "Wild Experience Seekers"],
+    durationOptions: ["6:30 PM – 10:30 PM"],
+    addons: ["Tents", "Skywatching", "BBQ Dinner", "Music Sessions"],
+    includes: ["Guide support (as arranged)"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Rate (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 100 },
+        { pax: 3, fullDay: 90 },
+        { pax: 4, fullDay: 80 },
+      ],
+      currency: "USD",
+    },
+
     packages: [
       {
-        id: "night-safari-bbq",
-        name: "Night Safari + BBQ",
-        duration: "Evening (5 hrs)",
-        people: "Up to 6",
-        highlights: ["Night Drive (Spotlights)", "Wildlife Spotting", "Campfire Dinner"],
-        includes: ["Tracker", "Full BBQ Dinner", "Lanterns & Mats"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "starry-skies-acoustic",
-        name: "Starry Skies Acoustic",
-        duration: "6:00 PM – 11:00 PM",
-        people: "Up to 8",
-        highlights: ["Twilight Ride", "Live Acoustic Music", "Stargazing"],
-        includes: ["Musician", "Star Map", "Finger Foods"],
-        priceFrom: "Contact for rates",
-      },
-      {
-        id: "overnight-camping",
-        name: "Overnight Camping",
-        duration: "Overnight",
-        people: "Custom",
-        highlights: ["Sleep in Eco-Tents", "Dinner by Fire", "Sunrise Views"],
-        includes: ["All Gear (Tents/Pillows)", "Nightwatch Security", "Breakfast"],
-        priceFrom: "Contact for rates",
+        id: "twilight-night",
+        name: "Twilight Safari + Campfire Night",
+        duration: "6:30 PM – 10:30 PM",
+        people: "2–8",
+        highlights: ["Night drive", "Forest patch", "Wildlife trail", "Campfire meal option"],
+        includes: ["Guided experience"],
+        addOns: ["Tents", "Skywatching", "BBQ Dinner", "Music Sessions"],
+        priceFrom: "Per-person rates available (USD)",
       },
     ],
   },
 
   wildlife: {
     key: "wildlife",
-    title: "Wildlife Explorer",
-    subtitle: "Get up close with the giants of the wild.",
+    title: "Wildlife Explorer – Hadagiriya Safari Day Trip",
+    subtitle: "Witness majestic elephants and wildlife in a national park setting.",
     iconName: "Compass",
     accent: "forestGreen",
+
+    keyStops: ["Elephant Transit Home"],
+    idealFor: ["Safari Lovers", "Families with Kids", "Wildlife Photographers"],
+    durationOptions: ["Full Day (6:00 AM – 6:00 PM)"],
+    addons: ["Binoculars", "Lunch stop", "Local fruit basket"],
+    includes: ["Safari planning + coordination"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 150 },
+        { pax: 3, fullDay: 125 },
+        { pax: 4, fullDay: 100 },
+      ],
+      currency: "USD",
+    },
+
     packages: [
       {
-        id: "hadagiriya-morning",
-        name: "Hadagiriya Morning",
-        duration: "Morning (7 hrs)",
-        people: "Up to 6",
-        highlights: ["Hadagiriya Park", "Elephant Herds", "Optional Transit Home"],
-        includes: ["Private Transport", "Park Jeep", "Breakfast Pack"],
-        priceFrom: "Contact for rates",
+        id: "hadagiriya-full-day",
+        name: "Hadagiriya Safari Day Trip",
+        duration: "6:00 AM – 6:00 PM",
+        people: "2–6",
+        highlights: ["Elephant Transit Home", "Safari sessions", "Reservoir viewpoint (if possible)"],
+        includes: ["Safari coordination", "Support from guide/driver"],
+        addOns: ["Binoculars", "Lunch stop", "Local fruit basket"],
+        priceFrom: "Per-person rates available (USD)",
       },
+    ],
+  },
+
+  ella: {
+    key: "ella",
+    title: "Ella Highlands Excursion",
+    subtitle: "A day from Belihuloya to the chilled-out paradise of Ella.",
+    iconName: "MapPin",
+    accent: "premiumGold",
+
+    keyStops: ["Ravana Falls", "Nine Arches Bridge", "Café Stop", "Ella Rock", "Little Adam’s Peak"],
+    idealFor: ["Instagrammers", "Backpackers", "Day-trippers"],
+    durationOptions: ["Full Day (6:00 AM – 7:00 PM)"],
+    addons: ["Smooth Bar Stop", "Yoga Class", "Photography"],
+    includes: ["Transport (as arranged)"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 80 },
+        { pax: 3, fullDay: 70 },
+        { pax: 4, fullDay: 60 },
+      ],
+      currency: "USD",
+    },
+
+    packages: [
       {
-        id: "full-day-wildlife",
-        name: "Full-Day Wildlife",
-        duration: "5:00 AM – 5:00 PM",
-        people: "Up to 6",
-        highlights: ["Two Safari Sessions", "Lunch Break", "Sunset Reservoir View"],
-        includes: ["All Permits", "Lunch & Refreshments", "Binoculars"],
-        priceFrom: "Contact for rates",
+        id: "ella-highlands-day",
+        name: "Ella Highlands Day Trip",
+        duration: "6:00 AM – 7:00 PM",
+        people: "2–8",
+        highlights: ["Ravana Falls", "Nine Arches Bridge", "Ella Rock / Little Adam’s Peak"],
+        includes: ["Day transport"],
+        addOns: ["Smooth Bar Stop", "Yoga Class", "Photography"],
+        priceFrom: "Per-person rates available (USD)",
       },
+    ],
+  },
+
+  ecoHealing: {
+    key: "ecoHealing",
+    title: "Eco-Healing & Meditation Trail",
+    subtitle: "Relax your body and reconnect with nature in silence and serenity.",
+    iconName: "Lotus",
+    accent: "skyBlue",
+
+    keyStops: ["Kuragala Rock", "Hirikatuoya River", "Hunugal Pokuna", "Forest Garden Spot"],
+    idealFor: ["Wellness Travelers", "Solo Explorers", "Spiritual Groups"],
+    durationOptions: ["Half Day", "Full Day"],
+    addons: ["Organic Lunch", "Herbal Foot Soak", "Forest Meditation"],
+    includes: ["Wellness-friendly pacing"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)", "Half Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 70, halfDay: 50 },
+        { pax: 3, fullDay: 60, halfDay: 40 },
+        { pax: 4, fullDay: 50, halfDay: 30 },
+      ],
+      currency: "USD",
+    },
+
+    packages: [
       {
-        id: "eco-learning-kids",
-        name: "Eco-Learning (Kids)",
+        id: "eco-healing-half-or-full",
+        name: "Eco-Healing & Meditation Trail",
+        duration: "Half Day / Full Day",
+        people: "2–8",
+        highlights: ["River stillness", "Forest meditation", "Sacred rock views (optional)"],
+        includes: ["Relaxed itinerary"],
+        addOns: ["Organic Lunch", "Herbal Foot Soak", "Forest Meditation"],
+        priceFrom: "Per-person rates available (USD)",
+      },
+    ],
+  },
+
+  heritageTea: {
+    key: "heritageTea",
+    title: "Heritage Safari + Tea Country Ride",
+    subtitle: "Travel through colonial history and tea trails of Sri Lanka’s hills.",
+    iconName: "Leaf",
+    accent: "forestGreen",
+
+    keyStops: ["Dambetenna Tea Factory", "Rathmalgama Factory", "Adisham Bungalow", "Lipton’s Seat"],
+    idealFor: ["Tea Enthusiasts", "Seniors", "History Buffs"],
+    durationOptions: ["Full Day"],
+    addons: ["Guide Lecture", "Old Photographs", "Tea Tasting"],
+    includes: ["Tea-country route planning"],
+
+    ratesUSD: {
+      columns: ["# of Pax", "Full Day (Per Person)"],
+      rows: [
+        { pax: 2, fullDay: 80 },
+        { pax: 3, fullDay: 70 },
+        { pax: 4, fullDay: 60 },
+      ],
+      currency: "USD",
+    },
+
+    packages: [
+      {
+        id: "heritage-tea-full-day",
+        name: "Heritage Safari + Tea Country Ride",
         duration: "Full Day",
-        people: "Up to 8",
-        highlights: ["Custom Animal Checklist", "Conservation Talk", "Transit Home"],
-        includes: ["Educational Worksheets", "Gifts for Kids", "Sustainable Farm Lunch"],
-        priceFrom: "Contact for rates",
+        people: "2–8",
+        highlights: ["Tea factories", "Colonial heritage", "Lipton’s Seat viewpoints"],
+        includes: ["Guided experience (as arranged)"],
+        addOns: ["Guide Lecture", "Old Photographs", "Tea Tasting"],
+        priceFrom: "Per-person rates available (USD)",
       },
     ],
   },
 };
 
-// Helpers used by Tours page + Tour Details page
 export function getAllToursFlat() {
   const list = [];
   Object.values(tourData).forEach((cat) => {
-    cat.packages.forEach((pkg) => {
+    (cat.packages || []).forEach((pkg) => {
       list.push({
         ...pkg,
         categoryKey: cat.key,
@@ -283,6 +380,13 @@ export function getAllToursFlat() {
         categorySubtitle: cat.subtitle,
         iconName: cat.iconName,
         accent: cat.accent,
+
+        keyStops: cat.keyStops || [],
+        idealFor: cat.idealFor || [],
+        durationOptions: cat.durationOptions || [],
+        categoryAddons: cat.addons || [],
+        categoryIncludes: cat.includes || [],
+        ratesUSD: cat.ratesUSD || null,
       });
     });
   });
@@ -292,7 +396,7 @@ export function getAllToursFlat() {
 export function findTour(categoryKey, tourId) {
   const cat = tourData[categoryKey];
   if (!cat) return null;
-  const pkg = cat.packages.find((p) => p.id === tourId);
+  const pkg = (cat.packages || []).find((p) => p.id === tourId);
   if (!pkg) return null;
 
   return {
@@ -302,5 +406,12 @@ export function findTour(categoryKey, tourId) {
     categorySubtitle: cat.subtitle,
     iconName: cat.iconName,
     accent: cat.accent,
+
+    keyStops: cat.keyStops || [],
+    idealFor: cat.idealFor || [],
+    durationOptions: cat.durationOptions || [],
+    categoryAddons: cat.addons || [],
+    categoryIncludes: cat.includes || [],
+    ratesUSD: cat.ratesUSD || null,
   };
 }

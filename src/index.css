@@ -16,6 +16,10 @@ html, body {
   font-family: var(--font-heading);
 }
 
+/* Better selection + scrollbar (optional) */
+::selection {
+  background: rgba(212, 175, 55, 0.35); /* premiumGold feel */
+}
 
 
 
