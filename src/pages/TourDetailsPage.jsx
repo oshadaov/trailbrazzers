@@ -13,6 +13,7 @@ import SeoHead from "../components/SeoHead";
 import BookingForm from "../components/BookingForm";
 import { colors } from "../theme/colors";
 import { findTour } from "../data/tours";
+import RatesTable from "../components/RatesTable";
 
 /** Category backgrounds (fallbacks) */
 const bgByCategoryKey = {
@@ -253,8 +254,8 @@ export default function TourDetailsPage() {
                     </li>
                   </ul>
                 </div>
-
-                {/* Secondary WhatsApp CTA inside content */}
+{/* 
+                Secondary WhatsApp CTA inside content
                 {waLink ? (
                   <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
                     <div>
@@ -274,8 +275,10 @@ export default function TourDetailsPage() {
                       Book on WhatsApp
                     </a>
                   </div>
-                ) : null}
+                ) : null} */}
               </div>
+              <RatesTable rates={tour.ratesUSD} />
+
             </div>
 
             <div className="lg:col-span-1">

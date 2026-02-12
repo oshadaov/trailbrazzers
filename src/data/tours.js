@@ -294,42 +294,48 @@ export const tourData = {
     ],
   },
 
-  ecoHealing: {
-    key: "ecoHealing",
-    title: "Eco-Healing & Meditation Trail",
-    subtitle: "Relax your body and reconnect with nature in silence and serenity.",
-    iconName: "Leaf",
-    accent: "skyBlue",
+  // ... keep everything else as you already have
 
-    keyStops: ["Kuragala Rock", "Hirikatuoya River", "Hunugal Pokuna", "Forest Garden Spot"],
-    idealFor: ["Wellness Travelers", "Solo Explorers", "Spiritual Groups"],
-    durationOptions: ["Half Day", "Full Day"],
-    addons: ["Organic Lunch", "Herbal Foot Soak", "Forest Meditation"],
-    includes: ["Wellness-friendly pacing"],
+ecoHealing: {
+  key: "ecoHealing",
+  title: "Eco-Healing & Meditation Trail",
+  subtitle: "Relax your body and reconnect with nature in silence and serenity.",
+  iconName: "Leaf",
+  accent: "skyBlue",
 
-    ratesUSD: {
-      columns: ["# of Pax", "Full Day (Per Person)", "Half Day (Per Person)"],
-      rows: [
-        { pax: 2, fullDay: 70, halfDay: 50 },
-        { pax: 3, fullDay: 60, halfDay: 40 },
-        { pax: 4, fullDay: 50, halfDay: 30 },
-      ],
-      currency: "USD",
-    },
+  keyStops: ["Kuragala Rock", "Hirikatuoya River", "Hunugal Pokuna", "Forest Garden Spot"],
+  idealFor: ["Wellness Travelers", "Solo Explorers", "Spiritual Groups"],
+  durationOptions: ["Half Day", "Full Day"],
 
-    packages: [
-      {
-        id: "eco-healing-half-or-full",
-        name: "Eco-Healing & Meditation Trail",
-        duration: "Half Day / Full Day",
-        people: "2–8",
-        highlights: ["River stillness", "Forest meditation", "Sacred rock views (optional)"],
-        includes: ["Relaxed itinerary"],
-        addOns: ["Organic Lunch", "Herbal Foot Soak", "Forest Meditation"],
-        priceFrom: "Per-person rates available (USD)",
-      },
+  // ✅ Fix this:
+  addons: ["Organic Lunch", "Herbal Foot Soak", "Forest Meditation"],
+
+  includes: ["Wellness-friendly pacing"],
+
+  ratesUSD: {
+    columns: ["# of Pax", "Full Day (Per Person)", "Half Day (Per Person)"],
+    rows: [
+      { pax: 2, fullDay: 70, halfDay: 50 },
+      { pax: 3, fullDay: 60, halfDay: 40 },
+      { pax: 4, fullDay: 50, halfDay: 30 },
     ],
+    currency: "USD",
   },
+
+  packages: [
+    {
+      id: "eco-healing-half-or-full",
+      name: "Eco-Healing & Meditation Trail",
+      duration: "Half Day / Full Day",
+      people: "2–8",
+      highlights: ["River stillness", "Forest meditation", "Sacred rock views (optional)"],
+      includes: ["Relaxed itinerary"],
+      addOns: ["Organic Lunch", "Herbal Foot Soak", "Forest Meditation"],
+      priceFrom: "Per-person rates available (USD)",
+    },
+  ],
+},
+
 
   heritageTea: {
     key: "heritageTea",
