@@ -249,7 +249,7 @@ export const tourData = {
         name: "Hadagiriya Safari Day Trip",
         duration: "6:00 AM – 6:00 PM",
         people: "2–6",
-        highlights: ["Elephant Transit Home", "Safari sessions", "Reservoir viewpoint (if possible)"],
+        highlights: ["Elephant Transit Home"],
         includes: ["Safari coordination", "Support from guide/driver"],
         addOns: ["Binoculars", "Lunch stop", "Local fruit basket"],
         priceFrom: "Per-person rates available (USD)",
