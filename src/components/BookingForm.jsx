@@ -30,7 +30,10 @@ function todayISO() {
 function Field({ label, icon, children, hint }) {
   return (
     <label className="block">
-      <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: "#0f172a" }}>
+      <div
+        className="flex items-center gap-2 text-sm font-semibold"
+        style={{ color: "#0f172a" }}
+      >
         {icon}
         {label}
       </div>
@@ -58,7 +61,8 @@ export default function BookingForm({ tour, businessName = "Trailblazer" }) {
     notes: "",
   });
 
-  const onChange = (key) => (e) => setForm((p) => ({ ...p, [key]: e.target.value }));
+  const onChange = (key) => (e) =>
+    setForm((p) => ({ ...p, [key]: e.target.value }));
 
   const message = useMemo(() => {
     return `
@@ -81,18 +85,25 @@ Please confirm availability and total price. Thank you!
     `.trim();
   }, [form, tour, businessName]);
 
-  const whatsappUrl = useMemo(() => buildWhatsAppUrl(whatsappNumber, message), [whatsappNumber, message]);
+  const whatsappUrl = useMemo(
+    () => buildWhatsAppUrl(whatsappNumber, message),
+    [whatsappNumber, message],
+  );
 
   const mailtoUrl = useMemo(() => {
     if (!contactEmail) return "";
-    const subject = encodeURIComponent(`Booking inquiry - ${tour?.name || "Tour"}`);
+    const subject = encodeURIComponent(
+      `Booking inquiry - ${tour?.name || "Tour"}`,
+    );
     const body = encodeURIComponent(message);
     return `mailto:${contactEmail}?subject=${subject}&body=${body}`;
   }, [contactEmail, message, tour]);
 
   const handleWhatsAppClick = () => {
     if (!whatsappNumber) {
-      alert("WhatsApp number missing. Please set VITE_WHATSAPP_NUMBER in .env and restart npm run dev.");
+      alert(
+        "WhatsApp number missing. Please set VITE_WHATSAPP_NUMBER in .env and restart npm run dev.",
+      );
       return;
     }
     const win = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
@@ -133,23 +144,37 @@ Please confirm availability and total price. Thank you!
       <div
         style={{
           padding: 22,
-          background: "linear-gradient(135deg, rgba(16,65,44,0.08) 0%, rgba(185,149,74,0.10) 100%)",
+          background:
+            "linear-gradient(135deg, rgba(16,65,44,0.08) 0%, rgba(185,149,74,0.10) 100%)",
           borderBottom: "1px solid rgba(15,23,42,0.10)",
         }}
       >
-        <h3 className="text-2xl font-bold" style={{ color: colors.forestGreen }}>
+        <h3
+          className="text-2xl font-bold"
+          style={{ color: colors.forestGreen }}
+        >
           Book on WhatsApp
         </h3>
         <p className="mt-1 text-sm" style={{ color: "rgba(15,23,42,0.75)" }}>
-          Fill the details and tap WhatsApp — your message will open ready to send.
+          Fill the details and tap WhatsApp — your message will open ready to
+          send.
         </p>
 
         {/* Small tour summary */}
-        <div className="mt-4 rounded-2xl p-4" style={{ backgroundColor: "#fff", border: "1px solid rgba(15,23,42,0.10)" }}>
+        <div
+          className="mt-4 rounded-2xl p-4"
+          style={{
+            backgroundColor: "#fff",
+            border: "1px solid rgba(15,23,42,0.10)",
+          }}
+        >
           <div className="text-sm font-semibold" style={{ color: "#0f172a" }}>
             {tour?.name || "Selected Tour"}
           </div>
-          <div className="text-xs mt-1" style={{ color: "rgba(15,23,42,0.70)" }}>
+          <div
+            className="text-xs mt-1"
+            style={{ color: "rgba(15,23,42,0.70)" }}
+          >
             {tour?.categoryTitle || tour?.categoryKey || ""}
           </div>
         </div>
@@ -158,7 +183,11 @@ Please confirm availability and total price. Thank you!
       {/* Form */}
       <div style={{ padding: 22 }}>
         <div className="grid md:grid-cols-2 gap-4">
-          <Field label="Preferred date" icon={<Calendar size={16} />} hint="Recommended">
+          <Field
+            label="Preferred date"
+            icon={<Calendar size={16} />}
+            hint="Recommended"
+          >
             <input
               type="date"
               min={todayISO()}
@@ -173,7 +202,11 @@ Please confirm availability and total price. Thank you!
             />
           </Field>
 
-          <Field label="Number of people" icon={<UsersIcon size={16} />} hint="Adults + kids total">
+          <Field
+            label="Number of people"
+            icon={<UsersIcon size={16} />}
+            hint="Adults + kids total"
+          >
             <input
               type="number"
               min={1}
@@ -189,7 +222,11 @@ Please confirm availability and total price. Thank you!
             />
           </Field>
 
-          <Field label="Language" icon={<Languages size={16} />} hint="Preferred guide language">
+          <Field
+            label="Language"
+            icon={<Languages size={16} />}
+            hint="Preferred guide language"
+          >
             <select
               value={form.language}
               onChange={onChange("language")}
@@ -201,12 +238,21 @@ Please confirm availability and total price. Thank you!
               onBlur={() => setFocusKey("")}
             >
               <option>English</option>
-              <option>Sinhala</option>
-              <option>Tamil</option>
+              <option>Spanish</option>
+              <option>French</option>
+              <option>German</option>
+              <option>Italian</option>
+              <option>Portuguese</option>
+              <option>Russian</option>
+              <option>Chinese </option>
             </select>
           </Field>
 
-          <Field label="Your name" icon={<User size={16} />} hint="Optional, but helps us reply faster">
+          <Field
+            label="Your name"
+            icon={<User size={16} />}
+            hint="Optional, but helps us reply faster"
+          >
             <input
               type="text"
               value={form.name}
@@ -221,7 +267,11 @@ Please confirm availability and total price. Thank you!
             />
           </Field>
 
-          <Field label="Your phone" icon={<Phone size={16} />} hint="Optional (WhatsApp reply number)">
+          <Field
+            label="Your phone"
+            icon={<Phone size={16} />}
+            hint="Optional (WhatsApp reply number)"
+          >
             <input
               type="tel"
               value={form.phone}
@@ -237,7 +287,11 @@ Please confirm availability and total price. Thank you!
           </Field>
 
           <div className="md:col-span-2">
-            <Field label="Special requests / notes" icon={<StickyNote size={16} />} hint="Kids, food, accessibility, photography...">
+            <Field
+              label="Special requests / notes"
+              icon={<StickyNote size={16} />}
+              hint="Kids, food, accessibility, photography..."
+            >
               <textarea
                 rows={4}
                 value={form.notes}
@@ -323,7 +377,10 @@ Please confirm availability and total price. Thank you!
 
         {/* Preview */}
         <details className="mt-6">
-          <summary className="cursor-pointer text-sm font-semibold" style={{ color: "#0f172a" }}>
+          <summary
+            className="cursor-pointer text-sm font-semibold"
+            style={{ color: "#0f172a" }}
+          >
             Message preview
           </summary>
           <pre
@@ -336,7 +393,7 @@ Please confirm availability and total price. Thank you!
               color: "#0f172a",
             }}
           >
-{message}
+            {message}
           </pre>
         </details>
       </div>
