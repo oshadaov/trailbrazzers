@@ -209,7 +209,7 @@ export default function TourDetailsPage() {
           <div className="grid lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2">
               <div style={{ backgroundColor: "rgba(255,255,255,0.06)" }} className="p-6 rounded-2xl">
-                <h2 className="text-xl font-bold mb-3">Highlights</h2>
+                <h2 className="text-xl font-bold mb-3">Key Locations</h2>
                 <ul className="grid sm:grid-cols-2 gap-2">
                   {tour.highlights?.map((h) => (
                     <li key={h} className="text-gray-100 flex items-start gap-2">
@@ -277,7 +277,7 @@ export default function TourDetailsPage() {
                   </div>
                 ) : null} */}
               </div>
-              <RatesTable rates={tour.ratesUSD} />
+              {/* <RatesTable rates={tour.ratesUSD} /> */}
 
             </div>
 
@@ -320,7 +320,7 @@ export default function TourDetailsPage() {
                 </div>
               ) : null}
 
-              {/* FAQ */}
+              {/* FAQ
               <div className="mt-6 p-6 border rounded-2xl" style={{ borderColor: "rgba(255,255,255,0.18)" }}>
                 <h3 className="text-lg font-bold" style={{ color: colors.premiumGold }}>
                   Quick FAQ
@@ -347,10 +347,10 @@ export default function TourDetailsPage() {
                     </p>
                   </details>
                 </div>
-              </div>
+              </div> */}
 
               {/* Back to category */}
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <Link
                   to={`/tours/${tour.categoryKey}`}
                   className="inline-flex w-full items-center justify-center px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition hover:opacity-90"
@@ -362,7 +362,7 @@ export default function TourDetailsPage() {
                 >
                   View more in {tour.categoryTitle}
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

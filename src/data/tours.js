@@ -303,7 +303,7 @@ ecoHealing: {
   iconName: "Leaf",
   accent: "skyBlue",
 
-  keyStops: ["Kuragala Rock", "Hirikatuoya River", "Hunugal Pokuna", "Forest Garden Spot"],
+  keyStops: ["Kuragala Rock", "Hunugal Pokuna", "Hirikatuoya River", "Forest Garden Spot"],
   idealFor: ["Wellness Travelers", "Solo Explorers", "Spiritual Groups"],
   durationOptions: ["Half Day", "Full Day"],
 
@@ -328,7 +328,7 @@ ecoHealing: {
       name: "Eco-Healing & Meditation Trail",
       duration: "Half Day / Full Day",
       people: "2–8",
-      highlights: ["River stillness", "Forest meditation", "Sacred rock views (optional)"],
+      highlights: ["Kuragala Rock", "Hunugal Pokuna", "Hirikatuoya River", "Forest Garden Spot"],
       includes: ["Relaxed itinerary"],
       addOns: ["Organic Lunch", "Herbal Foot Soak", "Forest Meditation"],
       priceFrom: "Per-person rates available (USD)",
@@ -345,9 +345,9 @@ ecoHealing: {
     accent: "forestGreen",
 
     keyStops: ["Dambetenna Tea Factory", "Rathmalgama Factory", "Adisham Bungalow", "Lipton’s Seat"],
-    idealFor: ["Tea Enthusiasts", "Seniors", "History Buffs"],
+    idealFor: ["History Buffs", "Seniors", "Tea Enthusiasts"],
     durationOptions: ["Full Day"],
-    addons: ["Guide Lecture", "Old Photographs", "Tea Tasting"],
+    addons: ["Tea Tasting", "Old Photographs", "Guide Lecture"],
     includes: ["Tea-country route planning"],
 
     ratesUSD: {
@@ -366,7 +366,7 @@ ecoHealing: {
         name: "Heritage Safari + Tea Country Ride",
         duration: "Full Day",
         people: "2–8",
-        highlights: ["Tea factories", "Colonial heritage", "Lipton’s Seat viewpoints"],
+        highlights: ["Dambetenna Tea Factory", "Rathmalgama Factory", "Adisham Bungalow", "Lipton’s Seat"],
         includes: ["Guided experience (as arranged)"],
         addOns: ["Guide Lecture", "Old Photographs", "Tea Tasting"],
         priceFrom: "Per-person rates available (USD)",
