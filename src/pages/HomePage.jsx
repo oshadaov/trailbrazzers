@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Manifesto from "../components/Manifesto";
 import TourCollections from "../components/TourCollections";
+import AllTours from "./AllTours";
 import OperationsGrid from "../components/OperationsGrid";
 import ImpactDashboard from "../components/ImpactDashboard";
 import SeoHead from "../components/SeoHead";
@@ -19,7 +20,8 @@ export default function HomePage() {
       <SeoHead title={title} description={description} url={url} image={ogImage || undefined} />
       <Hero />
       <Manifesto />
-      <TourCollections />
+      {/* <TourCollections /> */}
+      <AllTours/>
       <ImpactDashboard compact />
       <OperationsGrid />
     </>

@@ -378,7 +378,7 @@ export default function TourCollections() {
                   </Link>
 
                   <Link
-                    to={`/tours/${current.key}`}
+                    to={`/tourss`}
                     className="px-5 py-3 text-xs rounded-full font-bold uppercase tracking-wider transition hover:opacity-90"
                     style={{
                       backgroundColor: colors.premiumGold,

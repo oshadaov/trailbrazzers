@@ -7,6 +7,7 @@
 // Premium Cream #F8F6F1
 
 export const colors = {
+  // iconcolor = ""
   forestGreen: "#1B4332",
   premiumGold: "#D4AF37",
   skyBlue: "#4A90E2",

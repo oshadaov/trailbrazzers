@@ -261,7 +261,7 @@ export const tourData = {
     key: "ella",
     title: "Ella Highlands Excursion",
     subtitle: "A day from Belihuloya to the chilled-out paradise of Ella.",
-    iconName: "MapPin",
+    iconName: "MapPinned",
     accent: "premiumGold",
 
     keyStops: ["Ravana Falls", "Nine Arches Bridge", "Café Stop", "Ella Rock", "Little Adam’s Peak"],
@@ -298,7 +298,7 @@ export const tourData = {
     key: "ecoHealing",
     title: "Eco-Healing & Meditation Trail",
     subtitle: "Relax your body and reconnect with nature in silence and serenity.",
-    iconName: "Lotus",
+    iconName: "Leaf",
     accent: "skyBlue",
 
     keyStops: ["Kuragala Rock", "Hirikatuoya River", "Hunugal Pokuna", "Forest Garden Spot"],
@@ -335,7 +335,7 @@ export const tourData = {
     key: "heritageTea",
     title: "Heritage Safari + Tea Country Ride",
     subtitle: "Travel through colonial history and tea trails of Sri Lanka’s hills.",
-    iconName: "Leaf",
+    iconName: "Landmark",
     accent: "forestGreen",
 
     keyStops: ["Dambetenna Tea Factory", "Rathmalgama Factory", "Adisham Bungalow", "Lipton’s Seat"],

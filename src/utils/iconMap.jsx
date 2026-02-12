@@ -11,9 +11,18 @@ import {
   BadgeCheck,
   Shield,
   MapPinned,
+
+  // New icons for categories
+  Leaf,
+  HeartHandshake,
+  Landmark,
+  TreePine,
+  Sunrise,
+  Tent,
+  Camera,
 } from "lucide-react";
 
-// Keep a single place to map string names -> Lucide icon components.
+// Central icon registry
 export const iconMap = {
   Map,
   Mountain,
@@ -27,6 +36,19 @@ export const iconMap = {
   BadgeCheck,
   Shield,
   MapPinned,
+
+  // NEW — Ella
+  Sunrise,        // scenic sunrise view
+  Camera,         // photography spot
+  Tent,           // camping / hiking
+
+  // NEW — Eco Healing
+  Leaf,           // nature
+  HeartHandshake, // healing / connection
+  TreePine,       // forest therapy
+
+  // NEW — Heritage Safari
+  Landmark,       // historical / heritage
 };
 
 export function Icon({ name, className }) {

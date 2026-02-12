@@ -40,7 +40,7 @@ export default function ToursPage() {
       <SeoHead title={title} description={description} url={url} image={ogImage || undefined} />
 
       {/* Quick explorer (filterable list) */}
-      <section style={{ backgroundColor: colors.premiumCream }} className="py-14">
+      {/* <section style={{ backgroundColor: colors.premiumCream }} className="py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between flex-wrap gap-4">
             <div>
@@ -132,7 +132,7 @@ export default function ToursPage() {
 
           {filtered.length === 0 ? <p className="mt-8 text-gray-600">No tours match your filters.</p> : null}
         </div>
-      </section>
+      </section> */}
 
       {/* Existing curated tab section */}
       <TourCollections />
