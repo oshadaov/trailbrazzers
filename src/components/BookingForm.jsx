@@ -376,7 +376,7 @@ Please confirm availability and total price. Thank you!
         </div>
 
         {/* Preview */}
-        <details className="mt-6">
+        {/* <details className="mt-6">
           <summary
             className="cursor-pointer text-sm font-semibold"
             style={{ color: "#0f172a" }}
@@ -395,7 +395,7 @@ Please confirm availability and total price. Thank you!
           >
             {message}
           </pre>
-        </details>
+        </details> */}
       </div>
     </section>
   );
