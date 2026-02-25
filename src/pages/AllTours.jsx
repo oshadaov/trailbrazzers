@@ -122,24 +122,7 @@ export default function  AllTours() {
 
       <section className="py-16" style={{ backgroundColor: colors.forestGreen }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          {/* Header */}
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div>
-              {/* <h1 className="text-3xl md:text-4xl font-serif font-bold" style={{ color: colors.premiumGold }}>
-                All Tours
-              </h1> */}
-              <p className="mt-2 text-white/80 max-w-2xl">
-                Browse every experience with images. Filter by category or search by tour name, highlights, or difficulty.
-              </p>
-            </div>
-
-            <Link
-              to="/"
-              className="text-sm underline text-white/80 hover:text-white"
-            >
-              ← Back to Home
-            </Link>
-          </div>
+          
 
           {/* Controls */}
           <div className="mt-8 grid gap-3 md:grid-cols-3">
