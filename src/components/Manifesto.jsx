@@ -54,7 +54,7 @@ export default function Manifesto() {
             alt="Cloud forest path"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
           <div
             style={{ backgroundColor: colors.forestGreen }}
             className="absolute bottom-6 right-6 p-6 text-white max-w-xs shadow-lg"
