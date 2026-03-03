@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://example.com/</loc></url>
-  <url><loc>https://example.com/tours</loc></url>
-  <url><loc>https://example.com/about</loc></url>
-  <url><loc>https://example.com/contact</loc></url>
-  <url><loc>https://example.com/tours/waterfall/classic-waterfall-safari</loc></url>
-  <url><loc>https://example.com/tours/waterfall/misty-falls-explorer</loc></url>
-  <url><loc>https://example.com/tours/waterfall/ultimate-7-falls-circuit</loc></url>
-  <url><loc>https://example.com/tours/waterfall/waterfalls-and-wellness</loc></url>
-  <url><loc>https://example.com/tours/peaks/bakers-bend-sunrise</loc></url>
-  <url><loc>https://example.com/tours/peaks/peaks-of-uva-explorer</loc></url>
-  <url><loc>https://example.com/tours/peaks/wangedigala-hike-combo</loc></url>
-  <url><loc>https://example.com/tours/peaks/sunset-and-serenity-peak</loc></url>
-  <url><loc>https://example.com/tours/trek/devils-staircase-epic</loc></url>
-  <url><loc>https://example.com/tours/trek/wangedigala-sunrise-trek</loc></url>
-  <url><loc>https://example.com/tours/trek/duwili-ella-jungle-trek</loc></url>
-  <url><loc>https://example.com/tours/trek/belihuloya-forest-sampler</loc></url>
-  <url><loc>https://example.com/tours/history/kuragala-monastery-tour</loc></url>
-  <url><loc>https://example.com/tours/history/adisham-and-colonial-trail</loc></url>
-  <url><loc>https://example.com/tours/history/ancient-springs-trail</loc></url>
-  <url><loc>https://example.com/tours/history/prehistoric-cave-trail</loc></url>
-  <url><loc>https://example.com/tours/twilight/night-safari-and-bbq</loc></url>
-  <url><loc>https://example.com/tours/twilight/starry-skies-acoustic</loc></url>
-  <url><loc>https://example.com/tours/twilight/overnight-camping</loc></url>
-  <url><loc>https://example.com/tours/wildlife/hadagiriya-morning</loc></url>
-  <url><loc>https://example.com/tours/wildlife/full-day-wildlife</loc></url>
-  <url><loc>https://example.com/tours/wildlife/eco-learning-kids</loc></url>
+
+  <url>
+    <loc>https://www.trailblazerslk.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.trailblazerslk.com/tours</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.trailblazerslk.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.trailblazerslk.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.trailblazerslk.com/science</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
